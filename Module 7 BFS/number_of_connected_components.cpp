@@ -6,11 +6,15 @@ using namespace std;
 const int N = 1e5 + 7;
 vector<int> adj[N];
 bool visited[N];
-
+vector<int> comp[N];
+int k = 1;
 void dfs(int u){
     visited[u] = true;
+    comp[k].push_back(u);
     for(int j: adj[u]){
-        if(visited[j]) continue;
+        if(visited[j]){
+            continue;
+        } 
         dfs(j);
     }
 }
@@ -48,7 +52,15 @@ int main(){
         // bfs(i);
         dfs(i);
         cc++;
+        k++;
     }
     cout<<"Number of connected components : "<<cc<<endl;
+    for(int i = 1; i <= cc; i++){
+        cout<<"Component "<<i<<" : "<<" ";
+        for(int j: comp[i]){
+            cout<<j<<" ";
+        }
+        cout<<endl;
+    }
     return 0;
 }
