@@ -11,12 +11,12 @@ int main(){
         if(x == -1) break;
         else s1.insert(x);
     }
-    for(auto it = s1.begin(); it != s1.end(); it++){
+    for(auto it = s1.rbegin(); it != s1.rend(); it++){
         cout<<*it<<" ";
     }
     cout<<endl;
-    cout<<*s1.lower_bound(20);
-    cout<<endl;
-    cout<<*s1.upper_bound(20);
+    // cout<<*s1.lower_bound(20);
+    // cout<<endl;
+    // cout<<*s1.upper_bound(20);
     return 0;
 }
