@@ -3,9 +3,12 @@ using namespace std;
 #define ll long long int
 #define Faster ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 int parent[1000];
+int parentSize[1000];
+
 void dsu_set(int n){
     for(int i = 1; i <= n; i++){
         parent[i] = -1;
+        parentSize[i] = 1;
     }
 }
 int dsu_find(int n){

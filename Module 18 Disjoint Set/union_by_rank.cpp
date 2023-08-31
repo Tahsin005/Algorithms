@@ -37,11 +37,23 @@ int main(){
     int n,e;
     cin>>n>>e;
     dsu_set(n);
+    for(int i = 1; i <= n; i++){
+        cout<<parent[i]<<" ";
+    }
+    cout<<endl;
     while(e--){
         int a,b;
         cin>>a>>b;
         dsu_union(a,b);
     }
-    cout<<dsu_find(5)<<endl;
+    for(int i = 1; i <= n; i++){
+        cout<<parent[i]<<" ";
+    }
+    cout<<endl;
+    for(int i = 1; i <= n; i++){
+        cout<<parentLevel[i]<<" ";
+    }
+    cout<<endl;
+    // cout<<dsu_find(5)<<endl;
     return 0;
 }
