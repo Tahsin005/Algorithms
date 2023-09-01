@@ -17,6 +17,11 @@ int main(){
     cout<<endl;
     // cout<<*s1.lower_bound(20);
     // cout<<endl;
+    /*Lower bound function will return the position if the value is present,
+    or will return the next greater value*/
+
     // cout<<*s1.upper_bound(20);
+    /*Upper bound function will always return the next greater value 
+    even it is present in the set*/
     return 0;
 }

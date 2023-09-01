@@ -4,7 +4,7 @@ using namespace std;
 #define Faster ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 int main(){
     Faster
-    set<int> s1;
+    set<int> s1;// by default values are stored in ascending order
     // set<int,greater<int>> s1;
     while(true){
         int x;

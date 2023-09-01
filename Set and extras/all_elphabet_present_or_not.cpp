@@ -5,7 +5,8 @@ using namespace std;
 int main(){
     Faster
     string s;
-    cin>>s;transform(s.begin(),s.end(),s.begin(),::toupper);
+    cin>>s;
+    transform(s.begin(),s.end(),s.begin(),::toupper);
     
     cout<<s<<endl;
     if(s.length() < 26){
