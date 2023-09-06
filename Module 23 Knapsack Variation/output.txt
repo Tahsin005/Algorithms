@@ -1,0 +1,1 @@
+NO Subset is possible with 2 minimum difference 
