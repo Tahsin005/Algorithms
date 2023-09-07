@@ -24,7 +24,7 @@ int main(){
         }
         for(int i = 1; i <= n; i++){
             for(int j = 0; j <= sum; j++){
-                if(a[i - 1] <= sum){
+                if(a[i - 1] <= j){
                     dp[i][j] = dp[i - 1][j - a[i - 1]]  or dp[i - 1][j];
                 }
                 else{
