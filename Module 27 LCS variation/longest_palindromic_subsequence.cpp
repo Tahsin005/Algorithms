@@ -35,18 +35,18 @@ int main(){
             j--;
         }
         else{
-            if(dp[i][j - 1] > dp[i - 1][j]){
-                j--;
-            }
-            else{
-                i--;
-            }
-            // if(dp[i - 1][j] > dp[i][j - 1]){
-            //     i--;
-            // }
-            // else{
+            // if(dp[i][j - 1] > dp[i - 1][j]){
             //     j--;
             // }
+            // else{
+            //     i--;
+            // }
+            if(dp[i - 1][j] > dp[i][j - 1]){
+                i--;
+            }
+            else{
+                j--;
+            }
         }
     }
     reverse(ans.begin(),ans.end());
