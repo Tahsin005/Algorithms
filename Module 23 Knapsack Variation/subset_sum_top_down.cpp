@@ -20,7 +20,7 @@ bool subset_sum(int n,int a[],int s){
 }
 /*
 4
-1 2 4 6A
+1 2 4 6
 13
 */
 int main(){
