@@ -5,7 +5,7 @@ using namespace std;
 const ll N = 1e5 + 5;
 ll save[N];
 ll fibo(ll n){
-    if(n == 0 or n == 1) return 1;
+    if(n == 1 or n == 2) return n - 1; 
     // Memoization
     if(save[n] != -1){
         return save[n];
